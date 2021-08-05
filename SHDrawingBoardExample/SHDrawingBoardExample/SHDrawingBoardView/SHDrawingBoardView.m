@@ -17,21 +17,30 @@
 
 @implementation SHDrawingBoardView
 
-- (instancetype)init
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self) {
         [self setup];
     }
     return self;
 }
 
+#pragma mark - 懒加载
+- (NSMutableArray *)paths{
+    if (!_paths) {
+        _paths = [[NSMutableArray alloc]init];
+    }
+    return _paths;
+}
+
 #pragma mark - Private methods
 - (void)setup {
     
     self.userInteractionEnabled = YES;
-    
-    _lineColor = [UIColor blackColor];
+    self.clipsToBounds = NO;
+    self.lineColor = [UIColor blackColor];
+    self.lineWidth = 5;
 }
 
 #pragma mark - Touches methods
@@ -39,19 +48,16 @@
     
     // 获取触摸对象
     UITouch *touch = [touches anyObject];
+    if (touch.view != self) {
+        return;
+    }
     // 获取手指的位置
-    CGPoint point = [touch locationInView:touch.view];
-    point = CGPointMake(point.x - self.frame.origin.x, point.y - self.frame.origin.y);
+    CGPoint point = [touch locationInView:self];
     
     //当手指按下的时候就创建一条路径
     UIBezierPath *path = [UIBezierPath bezierPath];
     //设置画笔宽度
-    if(self.lineWidth){
-        [path setLineWidth:self.lineWidth];
-        
-    }else{
-        [path setLineWidth:5];
-    }
+    [path setLineWidth:self.lineWidth];
     //设置起点
     [path moveToPoint:point];
     // 把每一次新创建的路径 添加到数组当中
@@ -64,9 +70,11 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     // 获取触摸对象
     UITouch *touch = [touches anyObject];
+    if (touch.view != self) {
+        return;
+    }
     // 获取手指的位置
-    CGPoint point = [touch locationInView:touch.view];
-    point = CGPointMake(point.x - self.frame.origin.x, point.y - self.frame.origin.y);
+    CGPoint point = [touch locationInView:self];
     
     // 连线的点
     NSDictionary *dic = [self.paths lastObject];
@@ -108,12 +116,11 @@
     [self setNeedsDisplay];
 }
 
-#pragma mark - 懒加载
-- (NSMutableArray *)paths{
-    if (!_paths) {
-        _paths = [[NSMutableArray alloc]init];
-    }
-    return _paths;
+#pragma mark 是否编辑
+- (BOOL)isEdit{
+    return self.paths.count ? YES : NO;
 }
+
+
 
 @end
