@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *lineColor;
 //画笔粗细（默认5）
 @property (nonatomic, assign) CGFloat lineWidth;
+//是否编辑了
+@property (nonatomic, assign, readonly) BOOL isEdit;
 
 //清除
 - (void)drawingClean;
