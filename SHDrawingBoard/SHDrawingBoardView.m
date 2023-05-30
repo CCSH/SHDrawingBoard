@@ -21,7 +21,11 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setup];
+        //初始化
+        self.userInteractionEnabled = YES;
+        self.clipsToBounds = NO;
+        self.lineColor = [UIColor blackColor];
+        self.lineWidth = 5;
     }
     return self;
 }
@@ -34,18 +38,9 @@
     return _paths;
 }
 
-#pragma mark - Private methods
-- (void)setup {
-    
-    self.userInteractionEnabled = YES;
-    self.clipsToBounds = NO;
-    self.lineColor = [UIColor blackColor];
-    self.lineWidth = 5;
-}
-
 #pragma mark - Touches methods
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
+    [super touchesBegan:touches withEvent:event];
     // 获取触摸对象
     UITouch *touch = [touches anyObject];
     if (touch.view != self) {
@@ -68,6 +63,7 @@
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesMoved:touches withEvent:event];
     // 获取触摸对象
     UITouch *touch = [touches anyObject];
     if (touch.view != self) {
@@ -93,9 +89,9 @@
         
         //设置颜色
         [color set];
-        // 设置连接处的样式
+        //设置连接处的样式
         [path setLineJoinStyle:kCGLineJoinRound];
-        // 设置头尾的样式
+        //设置头尾的样式
         [path setLineCapStyle:kCGLineCapRound];
         //渲染
         [path stroke];
@@ -109,6 +105,7 @@
     //重绘
     [self setNeedsDisplay];
 }
+
 #pragma mark 撤销
 - (void)drawingUndo{
     [self.paths removeLastObject];

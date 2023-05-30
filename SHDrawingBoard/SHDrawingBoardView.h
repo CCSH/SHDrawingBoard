@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SHDrawingBoardView : UIView
 
 //画笔颜色(默认黑色)
-@property (nonatomic, strong) UIColor *lineColor;
+@property (nonatomic, copy) UIColor *lineColor;
 //画笔粗细（默认5）
 @property (nonatomic, assign) CGFloat lineWidth;
 //是否编辑了

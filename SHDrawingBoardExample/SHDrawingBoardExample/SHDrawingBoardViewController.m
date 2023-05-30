@@ -8,7 +8,7 @@
 
 #import "SHDrawingBoardViewController.h"
 #import "SHDrawingBoardView.h"
-#import "UIImageView+SHExtension.h"
+#import <UIImageView+SHExtension.h>
 
 @interface SHDrawingBoardViewController ()
 
@@ -30,16 +30,16 @@
     self.view.backgroundColor = [UIColor blackColor];
     
     if (self.editorImage) {
-        CGRect frame = [self.imageView getImageFrame];
+        CGRect frame = self.imageView.imageF;
         self.imageView.frame = frame;
         self.drawerView.frame = frame;
     }else{
         
         self.drawerView.frame = self.drawingTool.frame;
     }
-    
-    [self.view addSubview:self.drawerView];
     [self.view addSubview:self.drawingTool];
+    //画板要在最上方
+    [self.view addSubview:self.drawerView];
 }
 
 #pragma mark 按钮点击
@@ -110,21 +110,14 @@
     }
 }
 
+#pragma mark - 触摸方法
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    [self.drawerView touchesBegan:touches withEvent:event];
-    
     [UIView animateWithDuration:0.25 animations:^{
         self.drawingTool.alpha = 0;
     }];
 }
 
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.drawerView touchesMoved:touches withEvent:event];
-}
-
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
     [UIView animateWithDuration:0.25 animations:^{
         self.drawingTool.alpha = 1;
     }];
@@ -245,25 +238,6 @@
     }
     
     return _imageView;
-}
-
-#pragma mark 获取Size
-- (CGSize)getSizeWithMaxSize:(CGSize)maxSize size:(CGSize)size{
-    
-    if (MIN(size.width, size.height)) {
-        
-        if (size.width > size.height) {
-            //宽大 按照宽给高
-            CGFloat width = MIN(maxSize.width, size.height);
-            return CGSizeMake(width, width*size.height/size.width);
-        }else{
-            //高大 按照高给宽
-            CGFloat height = MIN(maxSize.height, size.height);
-            return  CGSizeMake(height*size.width/size.height, height);
-        }
-    }
-    
-    return maxSize;
 }
 
 @end

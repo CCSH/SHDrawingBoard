@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39A090E800970C237F2AFFC0 /* Pods_SHDrawingBoardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3FF03FF8F6C1629AE911C1 /* Pods_SHDrawingBoardExample.framework */; };
 		5C6E339F2154844F00ABEA22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E339E2154844F00ABEA22 /* AppDelegate.m */; };
 		5C6E33A22154844F00ABEA22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E33A12154844F00ABEA22 /* ViewController.m */; };
 		5C6E33A52154844F00ABEA22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6E33A32154844F00ABEA22 /* Main.storyboard */; };
@@ -15,10 +16,11 @@
 		5C6E33AD2154845000ABEA22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E33AC2154845000ABEA22 /* main.m */; };
 		5C6E33B72154845100ABEA22 /* SHDrawingBoardExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E33B62154845100ABEA22 /* SHDrawingBoardExampleTests.m */; };
 		5C6E33C22154845100ABEA22 /* SHDrawingBoardExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E33C12154845100ABEA22 /* SHDrawingBoardExampleUITests.m */; };
-		5C6E33D22154849700ABEA22 /* SHDrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E33D12154849700ABEA22 /* SHDrawingBoardView.m */; };
 		5C6E33D52154860700ABEA22 /* SHDrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E33D42154860700ABEA22 /* SHDrawingBoardViewController.m */; };
-		5C6E33D8215487C000ABEA22 /* UIImageView+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6E33D6215487C000ABEA22 /* UIImageView+SHExtension.m */; };
 		5C6E33DA2154882400ABEA22 /* all_task_message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6E33D92154882400ABEA22 /* all_task_message@2x.png */; };
+		5CCAAD8A2A259CB800F7CACE /* SHDrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCAAD892A259CB800F7CACE /* SHDrawingBoardView.m */; };
+		65A4909960A42BF365166AA4 /* Pods_SHDrawingBoardExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E051BF3ADD2AB7F2FAEDA9B /* Pods_SHDrawingBoardExampleTests.framework */; };
+		C6C6DB971ECAA768FC52E207 /* Pods_SHDrawingBoardExample_SHDrawingBoardExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2A6A09615052F7338CB7D5 /* Pods_SHDrawingBoardExample_SHDrawingBoardExampleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1755039DE4E2F6A8C867EDA5 /* Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1E1760EA6720EE0627249DAC /* Pods-SHDrawingBoardExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHDrawingBoardExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SHDrawingBoardExampleTests/Pods-SHDrawingBoardExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A3FF03FF8F6C1629AE911C1 /* Pods_SHDrawingBoardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHDrawingBoardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B2A6A09615052F7338CB7D5 /* Pods_SHDrawingBoardExample_SHDrawingBoardExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHDrawingBoardExample_SHDrawingBoardExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C90548A52EDE6E10747998B /* Pods-SHDrawingBoardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHDrawingBoardExample.debug.xcconfig"; path = "Target Support Files/Pods-SHDrawingBoardExample/Pods-SHDrawingBoardExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5C6E339A2154844F00ABEA22 /* SHDrawingBoardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHDrawingBoardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6E339D2154844F00ABEA22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C6E339E2154844F00ABEA22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,13 +62,15 @@
 		5C6E33BD2154845100ABEA22 /* SHDrawingBoardExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHDrawingBoardExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6E33C12154845100ABEA22 /* SHDrawingBoardExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHDrawingBoardExampleUITests.m; sourceTree = "<group>"; };
 		5C6E33C32154845100ABEA22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C6E33D02154849700ABEA22 /* SHDrawingBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHDrawingBoardView.h; sourceTree = "<group>"; };
-		5C6E33D12154849700ABEA22 /* SHDrawingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHDrawingBoardView.m; sourceTree = "<group>"; };
 		5C6E33D32154860700ABEA22 /* SHDrawingBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHDrawingBoardViewController.h; sourceTree = "<group>"; };
 		5C6E33D42154860700ABEA22 /* SHDrawingBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHDrawingBoardViewController.m; sourceTree = "<group>"; };
-		5C6E33D6215487C000ABEA22 /* UIImageView+SHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SHExtension.m"; sourceTree = "<group>"; };
-		5C6E33D7215487C000ABEA22 /* UIImageView+SHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SHExtension.h"; sourceTree = "<group>"; };
 		5C6E33D92154882400ABEA22 /* all_task_message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "all_task_message@2x.png"; sourceTree = "<group>"; };
+		5CCAAD882A259CB800F7CACE /* SHDrawingBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDrawingBoardView.h; sourceTree = "<group>"; };
+		5CCAAD892A259CB800F7CACE /* SHDrawingBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDrawingBoardView.m; sourceTree = "<group>"; };
+		6E051BF3ADD2AB7F2FAEDA9B /* Pods_SHDrawingBoardExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHDrawingBoardExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AAC40BA39A5FF625CCA4033 /* Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EEE7635C9A464830695DA70 /* Pods-SHDrawingBoardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHDrawingBoardExample.release.xcconfig"; path = "Target Support Files/Pods-SHDrawingBoardExample/Pods-SHDrawingBoardExample.release.xcconfig"; sourceTree = "<group>"; };
+		9B0BA450C1C131C18F5BC9C7 /* Pods-SHDrawingBoardExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHDrawingBoardExampleTests.release.xcconfig"; path = "Target Support Files/Pods-SHDrawingBoardExampleTests/Pods-SHDrawingBoardExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A090E800970C237F2AFFC0 /* Pods_SHDrawingBoardExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A4909960A42BF365166AA4 /* Pods_SHDrawingBoardExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C6DB971ECAA768FC52E207 /* Pods_SHDrawingBoardExample_SHDrawingBoardExampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +108,8 @@
 				5C6E33B52154845100ABEA22 /* SHDrawingBoardExampleTests */,
 				5C6E33C02154845100ABEA22 /* SHDrawingBoardExampleUITests */,
 				5C6E339B2154844F00ABEA22 /* Products */,
+				B0ADBEEADF70399DF6830D52 /* Pods */,
+				D6489A18B04945B3B98789B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,11 +126,13 @@
 		5C6E339C2154844F00ABEA22 /* SHDrawingBoardExample */ = {
 			isa = PBXGroup;
 			children = (
-				5C6E33CF2154848600ABEA22 /* SHDrawingBoardView */,
+				5CCAAD872A259CB800F7CACE /* SHDrawingBoard */,
 				5C6E339D2154844F00ABEA22 /* AppDelegate.h */,
 				5C6E339E2154844F00ABEA22 /* AppDelegate.m */,
 				5C6E33A02154844F00ABEA22 /* ViewController.h */,
 				5C6E33A12154844F00ABEA22 /* ViewController.m */,
+				5C6E33D32154860700ABEA22 /* SHDrawingBoardViewController.h */,
+				5C6E33D42154860700ABEA22 /* SHDrawingBoardViewController.m */,
 				5C6E33D92154882400ABEA22 /* all_task_message@2x.png */,
 				5C6E33A32154844F00ABEA22 /* Main.storyboard */,
 				5C6E33A62154845000ABEA22 /* Assets.xcassets */,
@@ -145,17 +161,38 @@
 			path = SHDrawingBoardExampleUITests;
 			sourceTree = "<group>";
 		};
-		5C6E33CF2154848600ABEA22 /* SHDrawingBoardView */ = {
+		5CCAAD872A259CB800F7CACE /* SHDrawingBoard */ = {
 			isa = PBXGroup;
 			children = (
-				5C6E33D7215487C000ABEA22 /* UIImageView+SHExtension.h */,
-				5C6E33D6215487C000ABEA22 /* UIImageView+SHExtension.m */,
-				5C6E33D02154849700ABEA22 /* SHDrawingBoardView.h */,
-				5C6E33D12154849700ABEA22 /* SHDrawingBoardView.m */,
-				5C6E33D32154860700ABEA22 /* SHDrawingBoardViewController.h */,
-				5C6E33D42154860700ABEA22 /* SHDrawingBoardViewController.m */,
+				5CCAAD882A259CB800F7CACE /* SHDrawingBoardView.h */,
+				5CCAAD892A259CB800F7CACE /* SHDrawingBoardView.m */,
 			);
-			path = SHDrawingBoardView;
+			name = SHDrawingBoard;
+			path = ../../SHDrawingBoard;
+			sourceTree = "<group>";
+		};
+		B0ADBEEADF70399DF6830D52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C90548A52EDE6E10747998B /* Pods-SHDrawingBoardExample.debug.xcconfig */,
+				8EEE7635C9A464830695DA70 /* Pods-SHDrawingBoardExample.release.xcconfig */,
+				8AAC40BA39A5FF625CCA4033 /* Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.debug.xcconfig */,
+				1755039DE4E2F6A8C867EDA5 /* Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.release.xcconfig */,
+				1E1760EA6720EE0627249DAC /* Pods-SHDrawingBoardExampleTests.debug.xcconfig */,
+				9B0BA450C1C131C18F5BC9C7 /* Pods-SHDrawingBoardExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6489A18B04945B3B98789B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A3FF03FF8F6C1629AE911C1 /* Pods_SHDrawingBoardExample.framework */,
+				4B2A6A09615052F7338CB7D5 /* Pods_SHDrawingBoardExample_SHDrawingBoardExampleUITests.framework */,
+				6E051BF3ADD2AB7F2FAEDA9B /* Pods_SHDrawingBoardExampleTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C6E33C62154845100ABEA22 /* Build configuration list for PBXNativeTarget "SHDrawingBoardExample" */;
 			buildPhases = (
+				EF81799FC3CA2E0CA8DB5C3D /* [CP] Check Pods Manifest.lock */,
 				5C6E33962154844F00ABEA22 /* Sources */,
 				5C6E33972154844F00ABEA22 /* Frameworks */,
 				5C6E33982154844F00ABEA22 /* Resources */,
+				F833C8CB68950E25A86F7D5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C6E33C92154845100ABEA22 /* Build configuration list for PBXNativeTarget "SHDrawingBoardExampleTests" */;
 			buildPhases = (
+				E527C353B52A93019B55A171 /* [CP] Check Pods Manifest.lock */,
 				5C6E33AE2154845100ABEA22 /* Sources */,
 				5C6E33AF2154845100ABEA22 /* Frameworks */,
 				5C6E33B02154845100ABEA22 /* Resources */,
@@ -200,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C6E33CC2154845100ABEA22 /* Build configuration list for PBXNativeTarget "SHDrawingBoardExampleUITests" */;
 			buildPhases = (
+				4D4F7ED74E61F58E50784D91 /* [CP] Check Pods Manifest.lock */,
 				5C6E33B92154845100ABEA22 /* Sources */,
 				5C6E33BA2154845100ABEA22 /* Frameworks */,
 				5C6E33BB2154845100ABEA22 /* Resources */,
+				2EED4AC686F971324A9E5FC0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,15 +326,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EED4AC686F971324A9E5FC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D4F7ED74E61F58E50784D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E527C353B52A93019B55A171 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHDrawingBoardExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF81799FC3CA2E0CA8DB5C3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHDrawingBoardExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F833C8CB68950E25A86F7D5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHDrawingBoardExample/Pods-SHDrawingBoardExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHDrawingBoardExample/Pods-SHDrawingBoardExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SHDrawingBoardExample/Pods-SHDrawingBoardExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C6E33962154844F00ABEA22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CCAAD8A2A259CB800F7CACE /* SHDrawingBoardView.m in Sources */,
 				5C6E33D52154860700ABEA22 /* SHDrawingBoardViewController.m in Sources */,
 				5C6E33A22154844F00ABEA22 /* ViewController.m in Sources */,
-				5C6E33D22154849700ABEA22 /* SHDrawingBoardView.m in Sources */,
-				5C6E33D8215487C000ABEA22 /* UIImageView+SHExtension.m in Sources */,
 				5C6E33AD2154845000ABEA22 /* main.m in Sources */,
 				5C6E339F2154844F00ABEA22 /* AppDelegate.m in Sources */,
 			);
@@ -463,6 +607,7 @@
 		};
 		5C6E33C72154845100ABEA22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C90548A52EDE6E10747998B /* Pods-SHDrawingBoardExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -479,6 +624,7 @@
 		};
 		5C6E33C82154845100ABEA22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EEE7635C9A464830695DA70 /* Pods-SHDrawingBoardExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -495,6 +641,7 @@
 		};
 		5C6E33CA2154845100ABEA22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1760EA6720EE0627249DAC /* Pods-SHDrawingBoardExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -513,6 +660,7 @@
 		};
 		5C6E33CB2154845100ABEA22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0BA450C1C131C18F5BC9C7 /* Pods-SHDrawingBoardExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +679,7 @@
 		};
 		5C6E33CD2154845100ABEA22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAC40BA39A5FF625CCA4033 /* Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SHDrawingBoardExampleUITests/Info.plist;
@@ -548,6 +697,7 @@
 		};
 		5C6E33CE2154845100ABEA22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1755039DE4E2F6A8C867EDA5 /* Pods-SHDrawingBoardExample-SHDrawingBoardExampleUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SHDrawingBoardExampleUITests/Info.plist;

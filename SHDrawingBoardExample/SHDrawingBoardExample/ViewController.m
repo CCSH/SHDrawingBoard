@@ -23,6 +23,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     SHDrawingBoardViewController *vc = [[SHDrawingBoardViewController alloc]init];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     vc.editorImage = [UIImage imageNamed:@"all_task_message"];
     vc.block = ^(UIImage * _Nonnull image) {
         
